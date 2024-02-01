@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Display Message";
+    Layout = "~/Views/Shared/CustomLayout.cshtml";
+}
+
+<h2>Display Message</h2>
+@if (ViewBag.WelcomeMessage != null)
+{
+    <p>@ViewBag.WelcomeMessage</p>
+}
+else
+{
+    <p>No Welcome Message Available.</p>
+}
+
